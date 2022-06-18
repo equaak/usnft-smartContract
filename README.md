@@ -4,5 +4,3 @@ As you can see, the model for stabilizing this coin, which is supposed to be sta
 Instead of changing the value of each coin, the number of coins in the wallets changes. Logically, the capitalization of that coin on the graph should represent almost a straight line, while the rate graph should not, or better yet, the opposite. In reality, however, both graphs are very far from that.
 Unsft is designed to be more stable the more users it has. If the project loses interest, it will simply "eat up" all its coins, as the exchange rate will constantly fall and the money supply will constantly shrink, i.e. it will enter a "death spiral" phase. However, so far everything is fine with the project. USFNT can be placed in multiple pools, providing liquidity to automated market makers (AMMs).
 In order not to put users before the fact of their voluntary and forced participation in the manipulation of the money supply, projects that use senorage to stabilize have emerged.
-
-Translated with www.DeepL.com/Translator (free version)
