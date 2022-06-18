@@ -165,8 +165,8 @@ describe('UFragmentsPolicy:initialize', async function () {
     it('epoch', async function () {
       expect(await uFragmentsPolicy.epoch()).to.eq(0)
     })
-    it('globalAmpleforthEpochAndAMPLSupply', async function () {
-      const r = await uFragmentsPolicy.globalAmpleforthEpochAndAMPLSupply()
+    it('globalusnftEpochAndAMPLSupply', async function () {
+      const r = await uFragmentsPolicy.globalusnftEpochAndAMPLSupply()
       expect(r[0]).to.eq(0)
       expect(r[1]).to.eq(0)
     })
@@ -921,9 +921,9 @@ describe('UFragmentsPolicy:Rebase', async function () {
       expect(await uFragmentsPolicy.epoch()).to.eq(prevEpoch.add(1))
     })
 
-    it('should update globalAmpleforthEpochAndAMPLSupply', async function () {
+    it('should update globalusnftEpochAndAMPLSupply', async function () {
       await uFragmentsPolicy.connect(orchestrator).rebase()
-      const r = await uFragmentsPolicy.globalAmpleforthEpochAndAMPLSupply()
+      const r = await uFragmentsPolicy.globalusnftEpochAndAMPLSupply()
       expect(r[0]).to.eq(prevEpoch.add(1))
       expect(r[1]).to.eq('1010')
     })

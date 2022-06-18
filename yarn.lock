@@ -4,8 +4,8 @@
 __metadata:
   version: 6
 
-"ampleforth-contracts-master@workspace:.":
+"usnft-contracts-master@workspace:.":
   version: 0.0.0-use.local
-  resolution: "ampleforth-contracts-master@workspace:."
+  resolution: "usnft-contracts-master@workspace:."
   languageName: unknown
   linkType: soft

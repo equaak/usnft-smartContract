@@ -64,7 +64,7 @@ describe('UFragments:Initialization', () => {
   })
 
   it('should set detailed ERC20 parameters', async function () {
-    expect(await uFragments.name()).to.eq('Ampleforth')
+    expect(await uFragments.name()).to.eq('usnft')
     expect(await uFragments.symbol()).to.eq('AMPL')
     expect(await uFragments.decimals()).to.eq(DECIMALS)
   })

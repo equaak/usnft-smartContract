@@ -223,15 +223,15 @@ contract UFragmentsPolicy is Ownable {
     }
 
     /**
-     * @notice A multi-chain usnft interface method. The usnfteforth monetary policy contract
+     * @notice A multi-chain usnft interface method. The usnfte monetary policy contract
      *         on the base-chain and XC-usnfteController contracts on the satellite-chains
      *         implement this method. It atomically returns two values:
      *         what the current contract believes to be,
-     *         the globalusnfteforthEpoch and globalusnftSupply.
-     * @return globalusnfteforthEpoch The current epoch number.
+     *         the globalusnfteEpoch and globalusnftSupply.
+     * @return globalusnfteEpoch The current epoch number.
      * @return globalusnftSupply The total supply at the current epoch.
      */
-    function globalusnfteforthEpochAndusnftSupply() external view returns (uint256, uint256) {
+    function globalusnfteEpochAndusnftSupply() external view returns (uint256, uint256) {
         return (epoch, uFrags.totalSupply());
     }
 
@@ -277,7 +277,7 @@ contract UFragmentsPolicy is Ownable {
 
     /**
      * Computes the percentage of supply to be added or removed:
-     * Using the function in https://github.com/usnfteforth/AIPs/blob/master/AIPs/aip-5.md
+     * Using the function in https://github.com/usnfte/AIPs/blob/master/AIPs/aip-5.md
      * @param normalizedRate value of rate/targetRate in DECIMALS decimal fixed point number
      * @return The percentage of supply to be added or removed.
      */

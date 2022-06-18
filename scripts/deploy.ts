@@ -14,7 +14,7 @@ const parseEvents = (
     .map((log) => contractInterface.parseLog(log))
     .filter((log) => log.name === eventName)
 
-task('deploy:ampl', 'Deploy ampleforth contracts').setAction(
+task('deploy:ampl', 'Deploy usnft contracts').setAction(
   async (args, hre) => {
     console.log(args)
 
@@ -62,7 +62,7 @@ task('deploy:ampl', 'Deploy ampleforth contracts').setAction(
   },
 )
 
-task('upgrade:ampl', 'Upgrade ampleforth contracts')
+task('upgrade:ampl', 'Upgrade usnft contracts')
   .addParam('contract', 'which implementation contract to use')
   .addParam('address', 'which proxy address to upgrade')
   .addOptionalParam('multisig', 'which multisig address to use for upgrade')
